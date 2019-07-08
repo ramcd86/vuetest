@@ -1,0 +1,87 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "email": "ann@codingthesmartway.com"
+    }
+  ],
+  "shirts": [
+    {
+      "id": 1,
+      "shirtName": "Long Polo",
+      "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+      "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+      "price": 10.99
+    },
+    {
+        "id": 2,
+        "shirtName": "V-Neck Cuff",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 9.99
+      },
+      {
+        "id": 3,
+        "shirtName": "Patch Tee",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 13.99
+      },
+      {
+        "id": 4,
+        "shirtName": "High Tee",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 19.99
+      },
+      {
+        "id": 5,
+        "shirtName": "Low Tee",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 20.99
+      },
+      {
+        "id": 6,
+        "shirtName": "Round Cut",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 16.99
+      },
+      {
+        "id": 7,
+        "shirtName": "Short Cut",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 12.99
+      },
+      {
+        "id": 8,
+        "shirtName": "Button Trim",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 7.99
+      },
+      {
+        "id": 9,
+        "shirtName": "",
+        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "price": 5.99
+      }
+  ]
+}
