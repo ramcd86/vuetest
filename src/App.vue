@@ -1,66 +1,58 @@
 <template>
   <div id="app">
     <div id="nav" class="container">
-    <div class="row">
-      <div class="col-12 block text-right">
-            <router-link to="/">Home</router-link> | 
-            <router-link to="/about">About</router-link> | 
-            <router-link :to="{ name: 'shop', params: { queryData } }">Shop</router-link>
+      <div class="row">
+        <div class="col-12 block text-right">
+          <router-link to="/">Home</router-link>|
+          <router-link to="/about">About</router-link>|
+          <router-link to="/shop">Shop</router-link>
+        </div>
       </div>
+      <router-view />
     </div>
-        <router-view />
-    </div>
-
   </div>
 </template>
 
 
 <script>
 import { get, post } from "@/helpers/Utilities.js";
+import { store, mutate } from "@/store/store.js";
 
 export default {
-
-
   data() {
     return {
       get: get,
       post: post,
-
-      queryData:  {
-        shirts: '',
-        shoes: ''
-      }
+      state: store.dataState
     };
   },
 
   created() {
     this.get("http://localhost:3000/shirts").then(resp => {
-      this.queryData.shirts = JSON.parse(resp);
+      mutate.setShirts(JSON.parse(resp));
     });
     this.get("http://localhost:3000/shoes").then(resp => {
-      this.queryData.shoes = JSON.parse(resp);
+      mutate.setShoes(JSON.parse(resp));
     });
-
   },
 
   methods: {},
 
   mounted() {
-    console.log(this.queryData);
+    console.log(this.state.shirts, this.state.shoes);
   }
 };
 </script>
 
 
 <style lang="scss">
-
 .block {
   background-color: #fff;
   padding: 15px;
   // border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.03);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  margin-bottom: 20px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 20px;
 }
 
 #app {
