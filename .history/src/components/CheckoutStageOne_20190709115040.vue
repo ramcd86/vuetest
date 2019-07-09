@@ -36,7 +36,7 @@
  
       </div>
     </div>
-    <div v-if="totalPrice > 0" class="col-11 m-auto selected-product">Total Price: £{{totalPrice}}</div>
+    <div v-if="totalPrice > 0" class="col-11 m-auto selected-product">Total Price: {{totalPrice}}</div>
   </div>
 </template>
 

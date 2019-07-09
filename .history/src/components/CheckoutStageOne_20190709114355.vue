@@ -29,14 +29,12 @@
             @click="incrementQuantity(index)"
           ></i>
         </div>
-
-          <div class="col-12 text-right">
-            <button class="btn btn-outline-warning btn-sm" @click="prune(index)">Remove</button>
-          </div>
- 
+        <div class="col-12 text-right">
+          <button class="btn btn-outline-warning btn-sm" @click="prune(index)">Remove</button>
+        </div>
       </div>
     </div>
-    <div v-if="totalPrice > 0" class="col-11 m-auto selected-product">Total Price: £{{totalPrice}}</div>
+    <div class="col-12 selected-product">Total Price: {{totalPrice}}</div>
   </div>
 </template>
 
@@ -66,15 +64,23 @@ export default {
     },
     decrementQuantity(index) {
       mutate.decrementPurchaseState(index);
+      this.totalPriceCalculator();
     },
+    totalPriceCalculator() {
+
+    }
   },
 
   updated() {
+  },
+
+  computed: {
+    console.log('state changed')
     let localVal = 0;
       for (let i = 0; i < this.selectedProducts.length; i++) {
         localVal = localVal + this.selectedProducts[i].displayPrice;
       }
-    this.totalPrice = localVal.toFixed(2);
+    this.totalPrice = localVal;
   },
 
   watch: {

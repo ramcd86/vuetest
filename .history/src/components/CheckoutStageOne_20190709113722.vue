@@ -29,14 +29,11 @@
             @click="incrementQuantity(index)"
           ></i>
         </div>
-
-          <div class="col-12 text-right">
-            <button class="btn btn-outline-warning btn-sm" @click="prune(index)">Remove</button>
-          </div>
- 
+        <div class="col-12 text-right">
+          <button class="btn btn-outline-warning btn-sm" @click="prune(index)">Remove</button>
+        </div>
       </div>
     </div>
-    <div v-if="totalPrice > 0" class="col-11 m-auto selected-product">Total Price: £{{totalPrice}}</div>
   </div>
 </template>
 
@@ -53,9 +50,7 @@ export default {
     };
   },
 
-  mounted() {
-
-  },
+  mounted() {},
 
   methods: {
     prune(index) {
@@ -66,18 +61,38 @@ export default {
     },
     decrementQuantity(index) {
       mutate.decrementPurchaseState(index);
+      this.totalPriceCalculator();
     },
+    totalPriceCalculator() {
+
+    }
   },
 
   updated() {
+    console.log('state changed')
     let localVal = 0;
       for (let i = 0; i < this.selectedProducts.length; i++) {
         localVal = localVal + this.selectedProducts[i].displayPrice;
+        console.log(localVal);
       }
-    this.totalPrice = localVal.toFixed(2);
   },
 
   watch: {
+    // selectedProducts(value) {
+    //   //   console.log(value);
+    //   //   this.totalPrice = 0;
+    //   //   value.forEach(element => {
+    //   //     this.totalPrice = this.totalPrice + element.displayPrice;
+    //   //   });
+    //   //   console.log(this.totalPrice);
+    //   let localVal = 0;
+    //   for (let i = 0; i < value.length; i++) {
+    //     localVal = localVal + value[i].displayPrice;
+    //     // console.log(localVal);
+    //   }
+
+    //   console.log('storestate',store.purchaseState)
+    // }
   }
 };
 </script>

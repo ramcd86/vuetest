@@ -29,14 +29,12 @@
             @click="incrementQuantity(index)"
           ></i>
         </div>
-
-          <div class="col-12 text-right">
-            <button class="btn btn-outline-warning btn-sm" @click="prune(index)">Remove</button>
-          </div>
- 
+        <div class="col-12 text-right">
+          <button class="btn btn-outline-warning btn-sm" @click="prune(index)">Remove</button>
+        </div>
       </div>
     </div>
-    <div v-if="totalPrice > 0" class="col-11 m-auto selected-product">Total Price: £{{totalPrice}}</div>
+    <div class="col-12 selected-product">Total Price: {{totalPrice}}</div>
   </div>
 </template>
 

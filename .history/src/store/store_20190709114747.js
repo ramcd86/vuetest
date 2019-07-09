@@ -26,13 +26,13 @@ export const mutate = {
     incrementPurchaseState(index) {
         store.purchaseState[index].quantity = store.purchaseState[index].quantity + 1;
         store.purchaseState[index].displayPrice = store.purchaseState[index].price * store.purchaseState[index].quantity;
-        store.purchaseState[index].displayPrice = store.purchaseState[index].displayPrice.toFixed(2);
+        // store.purchaseState[index].displayPrice = store.purchaseState[index].displayPrice.toFixed(2);
         store.purchaseState[index].displayPrice = parseFloat(store.purchaseState[index].displayPrice);
     },
     decrementPurchaseState(index) {
         store.purchaseState[index].quantity = store.purchaseState[index].quantity - 1;
         store.purchaseState[index].displayPrice = store.purchaseState[index].price * store.purchaseState[index].quantity;
-        store.purchaseState[index].displayPrice = store.purchaseState[index].displayPrice.toFixed(2);
+        // store.purchaseState[index].displayPrice = store.purchaseState[index].displayPrice.toFixed(2);
         store.purchaseState[index].displayPrice = parseFloat(store.purchaseState[index].displayPrice);
         if (store.purchaseState[index].quantity <= 0) {
             this.prunePurchaseState(index);
