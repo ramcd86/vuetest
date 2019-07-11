@@ -87,65 +87,65 @@
   "shoes": [
     {
       "id": 1,
-      "shirtName": "Nike Run",
-      "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-      "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+      "shoeName": "Nike Run",
+      "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+      "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
       "price": 59.99
     },
     {
         "id": 2,
-        "shirtName": "Asics Treader",
-        "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-        "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "shoeName": "Asics Treader",
+        "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+        "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "price": 49.99
       },
       {
         "id": 3,
-        "shirtName": "Reebok Feet",
-        "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-        "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "shoeName": "Reebok Feet",
+        "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+        "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "price": 99.99
       },
       {
         "id": 4,
-        "shirtName": "Addidias Hiker",
-        "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-        "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "shoeName": "Addidias Hiker",
+        "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+        "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "price": 39.99
       },
       {
         "id": 5,
-        "shirtName": "Maran AmBUlates",
-        "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-        "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "shoeName": "Maran AmBUlates",
+        "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+        "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "price": 149.99
       },
       {
         "id": 6,
-        "shirtName": "House Sprinters",
-        "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-        "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "shoeName": "House Sprinters",
+        "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+        "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "price": 89.99
       },
       {
         "id": 7,
-        "shirtName": "Dukang Ionics",
-        "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-        "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "shoeName": "Dukang Ionics",
+        "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+        "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "price": 239.99
       },
       {
         "id": 8,
-        "shirtName": "Yeezy's",
-        "shirtColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
-        "shirtSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "shoeName": "Yeezy's",
+        "shoeColor": ["Street", "Green", "Rainbow", "Panther", "Cammo", "Sports", "Electric"],
+        "shoeSize": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "price": 239.99
       },
       {
         "id": 9,
-        "shirtName": "Fetchwear Black Opal",
-        "shirtColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
-        "shirtSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+        "shoeName": "Fetchwear Black Opal",
+        "shoeColor": ["Black", "White", "Hawaiian", "Blue", "Yellow", "Red", "Green"],
+        "shoeSize": ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
         "price": 74.99
       }
   ]

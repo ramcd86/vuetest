@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-12 header">
+    <div id="simple-menu" class="col-12 header">
       <i class="fas fa-shopping-basket"></i> Basket
     </div>
     <div v-if="!selectedProducts" class="col-12">
